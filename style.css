@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+.promo-box {
+    align-items:center;
+    background-color:#a4b3a8;
+    color:#fff;
+    display:flex;
+    font-size:16/0.625rem;
+    font-family: sans-serif;
+    height:45px;
+    justify-content:center;
+    letter-spacing:1.53px;
+    position:relative;
+    text-transform:uppercase;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.container .wrapper {
+    height: 45vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container .slider-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    height: 100%;
+    animation: slide 15s ease infinite;
+}
+
+.container #slider-1 {
+    background: lawngreen;
+    background: url(./1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container #slider-2 {
+    background: yellow;
+    background: url(./2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container #slider-3 {
+    background: orange;
+    background: url(./3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .button-holder {
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+}
+
+.container .button-holder .dots {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color: grey;
+    margin: 0.6rem 0.5rem;
+    opacity: 0.9;
+}
+
+.container .button-holder .dots:hover {
+    background-color: white;
+}
+
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-100%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-200%);}
+    70%{transform: translateX(0%);}
+    80%{transform: translateX(0%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+.category {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(168, 148, 148);
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.product-button {
+    display: flex;
+    height: 30px;
+    background: white;
+    width: auto;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    align-items: center;
+    padding: 10px;
+}
