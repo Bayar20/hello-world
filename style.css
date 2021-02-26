@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: 'Roboto';
 }
 
 .promo-box {
@@ -9,7 +10,7 @@ body {
     background-color:#a4b3a8;
     color:#fff;
     display:flex;
-    font-size:16/0.625rem;
+    font-size:14px;
     font-family: sans-serif;
     height:45px;
     justify-content:center;
